@@ -185,13 +185,12 @@ Probably the other debian-based distribution can be used as well, if you don't h
 ### Docker (Optional)
 
 ```bash
+# create docker image from Dockerfile
 docker build -t storm-builder:v1 .
 
-# get the id from `docker images`
-docker run -t -i --name storm-builder -v ${PWD}:/mnt/workdir storm-builder:v1
+# run the build command in container:
+docker run --name storm-builder -v ${PWD}:/mnt/workdir storm-builder:v1 ./build.sh
 
-# in docker
-./build.sh
 ```
 
 ### Compile time:
