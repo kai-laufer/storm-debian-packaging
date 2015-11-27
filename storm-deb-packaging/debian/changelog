@@ -1,3 +1,9 @@
+apache-storm (0.9.6-0) stable; urgency=low
+
+  * Updated to new storm version (See storm changelog here: /usr/share/doc/storm/CHANGELOG.md)
+
+ -- Michael Pershyn <michael.pershyn@gmail.com>  Mon, 27 Nov 2015 14:44:00 +0200
+
 apache-storm (0.9.5-1) stable; urgency=low
 
   * Added examples for runit scripts.
