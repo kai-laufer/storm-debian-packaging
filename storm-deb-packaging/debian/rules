@@ -32,7 +32,7 @@ ${ORIG_PATH}: ../downloads/${ORIG_PATH}.tar.gz
 	tar xf ../downloads/${ORIG_PATH}.tar.gz
 
 clean:
-	@- $(RM) orig \
+	@- $(RM) -r orig \
 	  build \
 	  debian/files \
 	  debian/*.substvars \
